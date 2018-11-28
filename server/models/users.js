@@ -5,6 +5,11 @@ var userSchema = new Schema({
     "userId":String,
     "userName":String,
     "userPwd":String,
-    "userNumber":String
+    "userNumber":String,
+    "userImg":String,
+    "userSex":String,
+    "userAge":String,
+    "userQQ":String,
+    "userPhone":String
 });
 module.exports = mongoose.model('users',userSchema);
