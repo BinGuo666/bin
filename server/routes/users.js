@@ -4,8 +4,6 @@ let mongoose = require('mongoose');
 let Lists = require('../models/users');
 let  multiparty = require('multiparty');
 let path = require('path');
-let bodyParse = require('body-parser');
-let apps = express();
 
 mongoose.connect('mongodb://127.0.0.1/XYY');
 
@@ -230,7 +228,7 @@ router.post('/change',function (req,res,next) {
                     result:""
                 })
             }else{
-                doc.save(function (err,doc) {
+                doc.save(function (err1,doc1) {
                     if(err1){
                         res.json({
                             status:"1",
@@ -241,7 +239,7 @@ router.post('/change',function (req,res,next) {
                         res.json({
                             status:"",
                             msg:"保存操作成功",
-                            result:doc
+                            result:doc1
                         })
                     }
                 });

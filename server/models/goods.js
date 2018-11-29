@@ -10,6 +10,7 @@ var goodsSchema = new Schema({
     "goodsNum":String,
     "goodsImg":String,
     "goodsAuthor":String,
+    "goodsAuthorId":String,
     "goodsStatus":String,
     "goodsCheck":String,
     "goodsTime":String,
