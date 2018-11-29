@@ -5,7 +5,7 @@ let Lists = require('../models/users');
 let  multiparty = require('multiparty');
 let path = require('path');
 
-mongoose.connect('mongodb://127.0.0.1/XYY');
+mongoose.connect('mongodb://127.0.0.1:28018/XYY');
 
 mongoose.connection.on("connected",function () {
     console.log("MongoDB connected success!");
